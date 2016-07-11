@@ -2077,4 +2077,13 @@ $settings['preserve_menuindex']->fromArray(array (
     'area' => 'manager',
     'editedon' => null,
 ), '', true, true);
+$settings['manager_logout_redirect_url']= $xpdo->newObject('modSystemSetting');
+$settings['manager_logout_redirect_url']->fromArray(array (
+    'key' => 'manager_logout_redirect_url',
+    'value' => '',
+    'xtype' => 'textfield',
+    'namespace' => 'core',
+    'area' => 'manager',
+    'editedon' => null,
+), '', true, true);
 return $settings;
